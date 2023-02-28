@@ -142,7 +142,7 @@ The content of the message is not important here, in these scenarios the focus i
 
 
 .. |Producer Dashboard|
-   image:: ../images/producer-dashboard.png
+   image:: images/producer-dashboard.png
    :alt: Producer Dashboard
 
 .. _ccloud-observability-producer-confluent-cloud-unreachable:
@@ -233,7 +233,7 @@ Troubleshooting
    |Confluent Cloud Panel|
 
 .. |Producer Connectivity Loss|
-   image:: ../images/producer-connectivity-loss.png
+   image:: images/producer-connectivity-loss.png
    :alt: Producer Connectivity Loss
 
 .. _ccloud-observability-producer-authorization-problem:
@@ -333,14 +333,14 @@ Resolve failure scenario
 
 
 .. |Confluent Cloud Panel|
-   image:: ../images/cloud-panel.png
+   image:: images/cloud-panel.png
    :alt: Confluent Cloud Panel
 
 .. |Confluent Cloud Dashboard Producer Authorization Problem|
-   image:: ../images/confluent-cloud-dashboard-producer-authorization-problem.png
+   image:: images/confluent-cloud-dashboard-producer-authorization-problem.png
    :alt: Confluent Cloud Dashboard
 
 .. |Producer Authorization Problem|
-   image:: ../images/producer-authorization-problem.png
+   image:: images/producer-authorization-problem.png
    :alt: Producer Authorization Problem
 
