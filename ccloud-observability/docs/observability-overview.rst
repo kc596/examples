@@ -147,14 +147,14 @@ The content of the message is not important here, in these scenarios the focus i
 
 .. _ccloud-observability-producer-confluent-cloud-unreachable:
 
-~~~~~~~~~~~~~~~~~~~~
 |ccloud| Unreachable
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 In the ``producer`` container, add a rule blocking network traffic that has a destination TCP port ``9092``. This will prevent the producer from reaching the |ak| cluster in |ccloud|.
 
 This scenario will look at |ccloud| metrics from the Metrics API and client metrics from the client application's MBean object ``kafka.producer:type=producer-metrics,client-id=producer-1``.
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Introduce failure scenario
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -164,6 +164,7 @@ Introduce failure scenario
 
       docker-compose exec producer iptables -A OUTPUT -p tcp --dport 9092 -j DROP
 
+^^^^^^^^^^^^^^^^^^^^
 Diagnose the problem
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -208,6 +209,7 @@ Diagnose the problem
 
    Note that the logs provide a clear picture of what is going on--``Error: NETWORK_EXCEPTION`` and ``server disconnected``. This was expected because the failure scenario we introduced blocked outgoing traffic to the broker's port. Looking at metrics alone won't always lead you directly to an answer but they are a quick way to see if things are working as expected.
 
+^^^^^^^^^^^^^^^^^^^^^^^^
 Resolve failure scenario
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -219,7 +221,7 @@ Resolve failure scenario
 
 #. It may take a few minutes for the producer to start sending requests again.
 
-
+^^^^^^^^^^^^^^^
 Troubleshooting
 ^^^^^^^^^^^^^^^
 
@@ -238,14 +240,14 @@ Troubleshooting
 
 .. _ccloud-observability-producer-authorization-problem:
 
-~~~~~~~~~~~~~~~~~~~~~
 Authorization Revoked
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 Using the |ccloud| CLI, revoke the producer's authorization to write to the topic.
 
 This scenario will look at |ccloud| metrics from the Metrics API and client metrics from the client application's MBean object ``kafka.producer:type=producer-metrics,client-id=producer-1``.
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Introduce failure scenario
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -255,6 +257,7 @@ Introduce failure scenario
 
       ccloud kafka acl delete --service-account 184498 --operation write  --topic '*' --allow
 
+^^^^^^^^^^^^^^^^^^^^
 Diagnose the problem
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -314,7 +317,7 @@ Diagnose the problem
         });
 
 
-
+^^^^^^^^^^^^^^^^^^^^^^^^
 Resolve failure scenario
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
