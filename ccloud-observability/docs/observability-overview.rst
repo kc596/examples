@@ -230,9 +230,7 @@ Troubleshooting
    Restart the producer by running ``docker-compose restart producer``. This is advice specific to this tutorial.
 
 
-.. |Confluent Cloud Panel|
-   image:: ../images/cloud-panel.png
-   :alt: Confluent Cloud Panel
+   |Confluent Cloud Panel|
 
 .. |Producer Connectivity Loss|
    image:: ../images/producer-connectivity-loss.png
