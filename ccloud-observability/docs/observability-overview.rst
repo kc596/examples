@@ -147,8 +147,9 @@ The content of the message is not important here, in these scenarios the focus i
 
 .. _ccloud-observability-producer-confluent-cloud-unreachable:
 
+~~~~~~~~~~~~~~~~~~~~
 |ccloud| Unreachable
-********************
+~~~~~~~~~~~~~~~~~~~~
 
 In the ``producer`` container, add a rule blocking network traffic that has a destination TCP port ``9092``. This will prevent the producer from reaching the |ak| cluster in |ccloud|.
 
@@ -237,8 +238,9 @@ Troubleshooting
 
 .. _ccloud-observability-producer-authorization-problem:
 
+~~~~~~~~~~~~~~~~~~~~~
 Authorization Revoked
-*********************
+~~~~~~~~~~~~~~~~~~~~~
 
 Using the |ccloud| CLI, revoke the producer's authorization to write to the topic.
 
