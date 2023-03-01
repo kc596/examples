@@ -555,6 +555,46 @@ you are running on a "basic" or "standard" cluster; both have a request limit of
 #. Reduce requests by adjusting producer batching configurations (``linger.ms``), consumer
    batching configurations (``fetch.max.wait.ms``), and shut down unnecessary clients.
 
+.. _ccloud-observability-teardown:
+
+Clean up |ccloud| resources
+---------------------------
+
+#. Tear down the Docker monitoring containers:
+
+   .. code-block:: bash
+
+      docker-compose down
+
+#. Delete the cloud api key created for the ``ccloud-exporter``:
+
+   .. code-block:: bash
+
+      ccloud api-key delete $METRICS_API_KEY
+
+#. Run the following to teardown the ccloud-stack, inserting your service account ID instead of ``184498``.
+   Your service account ID can be found in your client configuration file (ie ``stack-configs/java-service-account-184498.config``).
+
+   .. code-block:: bash
+
+      source ../utils/ccloud_library.sh
+      ccloud::destroy_ccloud_stack 184498
+
+.. _ccloud-observability-advanced-usage:
+
+Additional Resources
+--------------------
+
+-  Read `Monitoring Your Event Streams: Tutorial for Observability Into Apache Kafka Clients <https://www.confluent.io/blog/monitoring-event-streams-visualize-kafka-clients-in-confluent-cloud/>`__.
+
+-  See other :cloud:`Confluent Cloud Examples|get-started/cloud-demos.html`.
+
+-  See advanced options for working with the :cloud:`ccloud-stack utility for Confluent Cloud|get-started/examples/ccloud/docs/ccloud-stack.html#advanced-options`.
+
+-  See `Developing Client Applications on Confluent Cloud <https://docs.confluent.io/cloud/current/client-apps/index.html>`__ for a guide to configuring, monitoring, and
+   optimizing your |ak| client applications when using |ccloud|.
+
+-  See `jmx-monitoring-stacks <https://github.com/confluentinc/jmx-monitoring-stacks>`__ for examples of monitoring on-prem |ak| clusters and other clients with different monitoring technologies.
 
 .. |Confluent Cloud Panel|
    image:: images/cloud-panel.png
