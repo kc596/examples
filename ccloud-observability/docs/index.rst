@@ -603,10 +603,6 @@ Additional Resources
    image:: images/cloud-request-rate-breakdown.png
    :alt: Confluent Cloud Request Breakdown
 
-.. |Confluent Cloud Panel|
-   image:: images/cloud-panel.png
-   :alt: Confluent Cloud Panel
-
 .. |Confluent Cloud Dashboard|
    image:: images/confluent-cloud-dashboard.png
    :alt: Confluent Cloud Dashboard
