@@ -599,10 +599,6 @@ Additional Resources
 
 -  See `jmx-monitoring-stacks <https://github.com/confluentinc/jmx-monitoring-stacks>`__ for examples of monitoring on-prem |ak| clusters and other clients with different monitoring technologies.
 
-.. |Confluent Cloud Panel|
-   image:: images/cloud-panel.png
-   :alt: Confluent Cloud Panel
-
 .. |Confluent Cloud Request Breakdown|
    image:: images/cloud-request-rate-breakdown.png
    :alt: Confluent Cloud Request Breakdown
