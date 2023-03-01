@@ -349,7 +349,7 @@ message is not important here, in these scenarios the focus is on the change in 
 .. _ccloud-observability-consumer-increasing-consumer-lag:
 
 Increasing Consumer Lag
-***********************
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Consumer lag is a tremendous performance indicator. It tells you the offset difference between the
 producer's last produced message and the consumer group's last commit. If you are unfamiliar with
@@ -366,6 +366,7 @@ that collects data about consumer groups and presents them in a Prometheus scrap
 about |ccloud| cluster resource usage are pulled from the Metrics API endpoints. Consumer client metrics
 are pulled from the client application’s MBean object ``kafka.consumer:type=consumer-fetch-manager-metrics,client-id=<client_id>``.
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Introduce failure scenario
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -392,6 +393,7 @@ Introduce failure scenario
       Creating ccloud-observability_producer_5              ... done
       Starting ccloud-observability_consumer_1              ... done
 
+^^^^^^^^^^^^^^^^^^^^
 Diagnose the problem
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -451,6 +453,7 @@ Diagnose the problem
 
 #. The consumer logs won't show that the consumer is falling behind which is why it is important to have a robust monitoring solution that covers consumer lag.
 
+^^^^^^^^^^^^^^^^^^^^^^^^
 Resolve failure scenario
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -496,7 +499,7 @@ Instead the following will walk you through where to look in this dashboard if y
 .. _ccloud-observability-general-fail-to-create-partition:
 
 Failing to create a new partition
-*********************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It's possible you won't be able to create a partition because you have reached a one of |ccloud|'s partition limits.
 Follow the instructions below to check if your cluster is getting close to its partition limits.
@@ -527,7 +530,7 @@ Follow the instructions below to check if your cluster is getting close to its p
 .. _ccloud-observability-general-request-rate-limits:
 
 Request rate limits
-********************
+^^^^^^^^^^^^^^^^^^^
 
 |ccloud| has a limit on the maximum number of client requests allowed within a second. Client
 requests include but are not limited to requests from a producer to send a batch, requests from a
