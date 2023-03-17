@@ -1,4 +1,4 @@
-.. _ccloud-observability-overview:
+.. _ccloud-observability-index:
 
 Observability Overview and Setup
 --------------------------------
