@@ -107,7 +107,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
           <configuration>
             <sourceDirectory>${project.basedir}/src/main/resources/avro/io/confluent/examples/clients/basicavro/</sourceDirectory>
             <includes>
-              <include>Payment.avsc</include>
+              <include>Payment2b.avsc</include>
             </includes>
             <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
           </configuration>
@@ -124,7 +124,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
               </schemaRegistryUrls>
               <userInfoConfig>${schemaRegistryBasicAuthUserInfo}</userInfoConfig>
               <subjects>
-                  <transactions-value>src/main/resources/avro/io/confluent/examples/clients/basicavro/Payment2a.avsc</transactions-value>
+                  <avro-transactions-value>src/main/resources/avro/io/confluent/examples/clients/basicavro/Payment2b.avsc</avro-transactions-value>
               </subjects>
           </configuration>
           <goals>
