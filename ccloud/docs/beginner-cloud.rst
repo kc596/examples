@@ -31,7 +31,7 @@ Prerequisites
 -  `Confluent Cloud <https://www.confluent.io/confluent-cloud/tryfree/>`__
 
 -  Local `install of Confluent CLI
-   <https://docs.confluent.io/confluent-cli/current/install.html>`__ (v2.2.0 or later)
+   <https://docs.confluent.io/confluent-cli/current/install.html>`__ (v3.0.0 or later)
 
 -  .. include:: includes/prereq_timeout.rst
 
@@ -39,19 +39,6 @@ Prerequisites
 
 -  `jq <https://github.com/stedolan/jq/wiki/Installation>`__ installed on your host
 
-
-Cost to Run Tutorial
---------------------
-
-Caution
-~~~~~~~
-
-.. include:: includes/ccloud-examples-caution.rst
-
-|ccloud| Promo Code
-~~~~~~~~~~~~~~~~~~~
-
-.. include:: includes/ccloud-examples-promo-code.rst
 
 Run Tutorial
 ------------

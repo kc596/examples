@@ -13,7 +13,7 @@ For additional examples that showcase streaming applications within an event str
 # Prerequisites
 
 * [Common demo prerequisites](https://github.com/confluentinc/examples#prerequisites)
-* [Confluent Platform 7.3](https://www.confluent.io/download/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.cp-quickstart)
+* [Confluent Platform 7.4](https://www.confluent.io/download/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.cp-quickstart)
 
 # Run demo
 
@@ -44,9 +44,6 @@ For additional examples that showcase streaming applications within an event str
 ```bash
 ./start-cloud.sh
 ```
-
-* The first 20 users to sign up for [Confluent Cloud](https://www.confluent.io/confluent-cloud/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.clients-ccloud) and use promo code ``C50INTEG`` will receive an additional $50 free usage ([details](https://www.confluent.io/confluent-cloud-promo-disclaimer/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.clients-ccloud)).
-
 
 ### Advanced usage
 
