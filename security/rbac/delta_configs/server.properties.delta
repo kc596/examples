@@ -47,3 +47,14 @@ confluent.balancer.topic.replication.factor=1
 
 # Settings for Audit Logging
 confluent.security.event.logger.exporter.kafka.topic.replicas=1
+
+# OIDC
+confluent.authorizer.access.rule.providers=ZK_ACL,CONFLUENT
+confluent.metadata.server.sso.mode=oidc
+confluent.oidc.idp.groups.claim.name=groups
+confluent.oidc.idp.jwks.endpoint.uri=
+confluent.oidc.idp.authorize.base.endpoint.uri=
+confluent.oidc.idp.client.id=
+confluent.oidc.idp.client.secret=
+confluent.oidc.idp.token.base.endpoint.uri=
+confluent.oidc.idp.issuer=
